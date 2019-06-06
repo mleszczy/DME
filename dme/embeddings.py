@@ -7,7 +7,7 @@
 
 embeddings = [
         ('fasttext', 'crawl-300d-2M.vec', 300, 'fastText CommonCrawl',
-         'https://s3-us-west-1.amazonaws.com/fasttext-vectors/crawl-300d-2M.vec.zip'),
+		'https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip'),
         ('fasttext_wiki', 'wiki.en.vec', 300, 'fastText Wiki',
          'https://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.en.vec'),
         ('fasttext_opensubtitles', 'opensubtitles.skipgram.defaults.vec', 300, 'fastText OpenTitles',

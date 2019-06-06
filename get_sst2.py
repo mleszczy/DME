@@ -19,7 +19,6 @@ from tqdm import tqdm
 
 import spacy
 
-
 def main():
     root_path = os.path.join('data', 'datasets', 'sst')
     if not os.path.exists(root_path):
@@ -32,7 +31,7 @@ def main():
         if not os.path.exists(filename):
             os.system('wget %s' % (base_url + '/' + filename))
 
-    spacy_nlp = spacy.load('en')
+    spacy_nlp = spacy.blank('en')
 
     for filename in filenames:
         print(filename)
